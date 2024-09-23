@@ -14,7 +14,7 @@ docker run -d --name httpd-docker-01 -p 80:80 apache-docker-example
 `-d` - run as background process (demon).  
 `--name` - create name container *httpd-docker-01* in case I want to run multiple containers.  
 `-p` - port mapping local Port to the internal Port used by httpd docker image.  
-`apache-docker-example` - run well the name of image up.
+`apache-docker-example` - run well the name of image up.  
 Output:
 ```
 58df53e2085e9f6d37217287b7e77592d710647c0163828ca1fa031ce1b1049f
