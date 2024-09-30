@@ -1,36 +1,23 @@
 # Docker
-Learning docker
+## Learning docker
 
-<<<<<<< HEAD
-1. Its_as_simple_as_it_gets
-2. rock_paper_docker
-=======
-```
-REPOSITORY              TAG       IMAGE ID       CREATED      SIZE
-apache-docker-example   latest    bfabb7e3a7d9   4 days ago   148MB
-pytest                  v1        4ab89387c219   4 days ago   995MB
-```
+Docker is an open-source platform that automates the deployment, scaling, and management of applications using containerization. It packages applications with their dependencies into containers, ensuring consistent operation across various environments.
 
-Run example apache docker:
-```zsh
-docker run -d --name httpd-docker-01 -p 80:80 apache-docker-example
-```
-`-d` - run as background process (demon).  
-`--name` - create name container *httpd-docker-01* in case I want to run multiple containers.  
-`-p` - port mapping local Port to the internal Port used by httpd docker image.  
-`apache-docker-example` - run well the name of image up.  
-Output:
-```
-58df53e2085e9f6d37217287b7e77592d710647c0163828ca1fa031ce1b1049f
-```
+Key concepts:
 
-Run docker ps:
-```
-docker ps
-```
-Output:
-```
-CONTAINER ID   IMAGE                   COMMAND              CREATED          STATUS          PORTS                               NAMES
-58df53e2085e   apache-docker-example   "httpd-foreground"   27 minutes ago   Up 27 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp   httpd-docker-01
-```
->>>>>>> 6ed02d6d2e505873821705ec37cf4e592e8aa149
+1. **Containers:** Lightweight, standalone packages that contain everything an application needs to run, ensuring uniform behavior in different environments.
+2. **Docker Images:** Blueprints for creating containers, containing code, configuration, and dependencies.
+3. **Dockerfile:** A script that defines the steps to build a Docker image, specifying the environment and commands to create a working container.
+4. **Docker Hub:** A repository for sharing and accessing Docker images.
+5. **Docker Engine:** The core client-server application that builds and runs containers.
+6. **Containerization vs. Virtualization:** Containers are lighter and faster than virtual machines as they share the host OS kernel, making them more efficient.
+7. **Benefits:** Docker ensures consistency, isolation, scalability, portability, and efficiency in application deployment.
+
+Example: A web app with a specific Django version can be containerized and run consistently across different environments.
+
+In summary, Docker streamlines software deployment by providing a portable, efficient containerized environment.
+
+## table of contents
+
+1. First commands: [phptest](https://github.com/AndriiVasylenkoML/docker/tree/main/Its_as_simple_as_it_gets/phptest)
+2. Apache website: [rock_paper_docker](https://github.com/AndriiVasylenkoML/docker/tree/main/rock_paper_docker)
