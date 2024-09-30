@@ -100,7 +100,6 @@ docker rm $(docker ps -aq)
 Output:
 ```
 02173fb88cb7
-73207f21fba0
 c1f013e633fc
 ```
 Delete containers:
@@ -110,7 +109,6 @@ docker rm $(docker ps -aq)
 Output:
 ``` 
 02173fb88cb7
-73207f21fba0
 c1f013e633fc
 ```
 ---
